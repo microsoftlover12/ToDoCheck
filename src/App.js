@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Todo from './Components/Todo.js';
+import PropTypes from 'prop-types';
+
+
+
 
 function App() {
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <h1>Welcome </h1>
+
+      <h1>ToDo List , What do you prefer to do ?</h1>
+      <Todo />
+      
+   
+
+
+    </div>)
 }
 
-export default App;
+
+
+
+  export default  App
